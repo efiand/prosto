@@ -1946,9 +1946,6 @@ input[type="file"].visually-hidden {
 }
 
 .post__group {
-  position: relative;
-  z-index: 2;
-
   margin: 0 0 14px;
 }
 
@@ -1971,7 +1968,7 @@ input[type="file"].visually-hidden {
   position: absolute;
   top: 27px;
   right: 16px;
-  z-index: 2;
+  z-index: 1;
 
   border: solid 5px transparent;
   border-top: solid 6px #000000;
@@ -1987,7 +1984,6 @@ input[type="file"].visually-hidden {
 .post__group--city::before {
   top: 25px;
   right: 17px;
-  z-index: 2;
 
   box-sizing: border-box;
   width: 7px;
@@ -2001,10 +1997,14 @@ input[type="file"].visually-hidden {
 }
 
 .post__group--interactive {
+  z-index: 2;
+
   box-shadow: 0 0 10px 0 rgba(85, 119, 231, 0.31);
 }
 
 .post__group--interactive::before {
+  z-index: 3;
+
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -2022,9 +2022,6 @@ input[type="file"].visually-hidden {
 }
 
 .post__field {
-  position: relative;
-  z-index: 1;
-
   box-sizing: border-box;
   width: 100%;
   height: 56px;
@@ -2086,6 +2083,8 @@ input[type="file"].visually-hidden {
 }
 
 .post__field--select {
+  position: relative;
+
   padding-right: 34px;
 
   -webkit-appearance: textfield;
@@ -2094,6 +2093,8 @@ input[type="file"].visually-hidden {
 }
 
 .post__field--select:focus {
+  z-index: 2;
+
   border-color: #ffffff;
 }
 
@@ -2238,6 +2239,7 @@ input[type="file"].visually-hidden {
   position: absolute;
   top: 56px;
   left: 0;
+  z-index: 1;
 
   width: 100%;
   margin: 0;
