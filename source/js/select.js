@@ -12,6 +12,7 @@
     var list = document.createElement('ul');
     list.classList.add('post__opt-list');
     list.classList.add('hidden');
+
     for (var i = 0; i < options.length; i++) {
       var item = document.createElement('li');
       item.classList.add('post__opt-item');
@@ -20,6 +21,14 @@
     }
     select.insertAdjacentElement('afterEnd', list);
     var items = document.querySelectorAll('#' + id + ' ~ ul li');
+
+    /* Переполненный селект */
+    var listSize = select.getAttribute('data-size') || options.length;
+    var isOverflowed = false;
+    if (options.length > listSize) {
+      isOverflowed = true;
+      list.classList.add('post__opt-list--overflowed');
+    }
 
     var currentIndex = -1;
 
@@ -54,6 +63,9 @@
         selectBlurHandler();
       }
       setActiveOption(true);
+      if (isOverflowed) {
+        list.scrollTop = items[0].offsetHeight * currentIndex;
+      }
     };
 
     var itemsListener = function (ind) {

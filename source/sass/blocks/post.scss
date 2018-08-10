@@ -449,6 +449,11 @@
   font-weight: 500;
   font-size: 13px;
   box-shadow: 0 0 10px 0 rgba(85, 119, 231, 0.31);
+
+  &--overflowed {
+    height: 56px * 2;
+    overflow-y: auto;
+  }
 }
 
 .post__opt-item {
