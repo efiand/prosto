@@ -87,6 +87,7 @@
 
     select.addEventListener('focus', function () {
       select.parentNode.classList.add('post__group--interactive');
+
       for (i = 0; i < items.length; i++) {
         if (select.value === items[i].textContent) {
           currentIndex = i;
