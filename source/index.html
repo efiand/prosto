@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROSTO telecom</title>
+  <link rel="preload" href="fonts/roboto.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-light.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header" id="start">
+    {% include "njk/header.njk" %}
+    <section class="menu">
+      {% include "njk/menu.njk" %}
+    </section>
+  </header>
+  <main>
+    <section class="slider">
+      {% include "njk/slider.njk" %}
+    </section>
+    <section class="offers">
+      {% include "njk/offers.njk" %}
+    </section>
+    <section class="content">
+      {% include "njk/content.njk" %}
+    </section>
+    <section class="post login-popup">
+      <div class="post__board login-popup__board login">
+        {% include "njk/login.njk" %}
+      </div>
+    </section>
+    <section class="post feedback-popup">
+      <div class="post__board feedback-popup__board feedback">
+        {% include "njk/feedback.njk" %}
+      </div>
+    </section>
+    <section class="post error hidden">
+      <div class="post__board error__board">
+        {% include "njk/error.njk" %}
+      </div>
+    </section>
+  </main>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

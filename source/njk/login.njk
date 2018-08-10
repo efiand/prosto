@@ -1,0 +1,72 @@
+<h2 class="post__header">
+  Личный кабинет
+</h2>
+<button class="post__closer login-popup__closer hidden" type="button">
+  <span class="post__closer-content">
+    Закрыть
+  </span>
+</button>
+<ul class="post__pins">
+  <li class="post__pins-item">
+    <button class="post__pin login__pin login__pin--active hidden" type="button">
+      <span class="post__pin-content">
+        Регистрация
+      </span>
+    </button>
+  </li>
+  <li class="post__pins-item">
+    <button class="post__pin login__pin hidden" type="button">
+      <span class="post__pin-content">
+        Авторизация
+      </span>
+    </button>
+  </li>
+</ul>
+<ul class="post__tabs login__tabs">
+  <li class="post__tab login__tab login__tab--current">
+    <form class="post__form" action="index.html" method="POST">
+      <p class="post__group">
+        <input class="post__field" id="first-name" name="first-name" type="text" placeholder="Имя" required>
+        <label class="visually-hidden" for="first-name">
+          Имя
+        </label>
+      </p>
+      <p class="post__group">
+        <input class="post__field" id="last-name" name="last-name" type="text" placeholder="Фамилия" required>
+        <label class="visually-hidden" for="last-name">
+          Фамилия
+        </label>
+      </p>
+      <p class="post__group">
+        <input class="post__field" id="email" name="email" type="email" placeholder="Электронная почта" required>
+        <label class="visually-hidden" for="email">
+          Электронная почта
+        </label>
+      </p>
+      <p class="post__group">
+        <input class="post__field" id="tel" name="tel" type="tel" placeholder="Телефон" required>
+        <label class="visually-hidden" for="tel">
+          Телефон
+        </label>
+      </p>
+      <p class="post__group">
+        <input class="post__field" id="password" name="password" type="password" placeholder="Пароль" required>
+        <label class="visually-hidden" for="password">
+          Пароль
+        </label>
+      </p>
+      <p class="post__group">
+        <input class="post__field" id="password-repeat" name="password-repeat" type="password" placeholder="Подтвердите пароль" required>
+        <label class="visually-hidden" for="password-repeat">
+          Подтвердите пароль
+        </label>
+      </p>
+      <button class="post__submit" type="submit">
+        Зарегистрироваться
+      </button>
+    </form>
+  </li>
+  <li class="post__tab login__tab post__stub">
+    Раздел «Авторизация» в разработке.
+  </li>
+</ul>

@@ -1,0 +1,37 @@
+// Набор правил, применяемых только для смены состояний при включении-выключении JavaScript
+
+.news__tab,
+.publications__tab {
+  &.hidden {
+    display: block;
+    opacity: 1;
+  }
+
+  @include interactive();
+}
+
+.news__tab--interactive,
+.publications__tab--interactive {
+  &.hidden {
+    display: none;
+    opacity: 0;
+  }
+
+  .content__header {
+    padding: 0;
+  }
+
+  @media #{$tablet} {
+    &.hidden {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.news__pin,
+.publications__pin {
+  &--active {
+    background-color: $blue;
+  }
+}

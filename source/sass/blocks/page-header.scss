@@ -1,0 +1,43 @@
+.page-header {
+  position: relative;
+  background-color: #fcfdff;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 16px 14px 12px;
+
+  @media #{$tablet} {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 1;
+    padding: 0;
+  }
+
+  @media #{$desktop} {
+    left: calc(50% - 506px);
+  }
+}
+
+.page-header__menu-opener {
+  position: absolute;
+  top: 28px;
+  right: 21px;
+  width: 24px;
+  height: 18px;
+  background-color: transparent;
+  background-image: linear-gradient($blue-back 4px, transparent 4px, transparent 7px, $blue-back 7px, $blue-back 11px, transparent 11px, transparent 14px, $blue-back 14px);
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient($yellow 4px, transparent 4px, transparent 7px, $yellow 7px, $yellow 11px, transparent 11px, transparent 14px, $yellow 14px);
+  }
+
+  @include btn();
+
+  @media #{$tablet} {
+    display: none;
+  }
+}

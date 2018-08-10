@@ -1,0 +1,23 @@
+<h2 class="visually-hidden">
+  Новости и публикации
+</h2>
+<ul class="content__pins">
+  <li class="content__pins-item">
+    <button class="content__pin content__pin--active hidden" type="button">
+      Новости
+    </button>
+  </li>
+  <li class="content__pins-item">
+    <button class="content__pin hidden" type="button">
+      Публикации
+    </button>
+  </li>
+</ul>
+<ul class="content__tabs">
+  <li class="content__tab content__tab--current content-tab news">
+    {% include "njk/news.njk" %}
+  </li>
+  <li class="content__tab content-tab publications">
+    {% include "njk/publications.njk" %}
+  </li>
+</ul>

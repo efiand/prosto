@@ -1,0 +1,102 @@
+.content {
+  padding: 42px 24px 0;
+  background-color: #eff2f9;
+
+  @media #{$tablet} {
+    padding-top: 54px;
+  }
+}
+
+.content__pins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content__pin {
+  margin: 0 9px;
+  padding: 2px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #bfbfbf;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 4px transparent;
+
+  @include btn();
+
+  &:hover,
+  &:focus,
+  &--active {
+    color: $blue;
+    border-color: $yellow;
+  }
+
+  @media #{$tablet} {
+    padding-bottom: 9px;
+    font-size: 26px;
+    color: $blue-back;
+  }
+}
+
+.content__tabs {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content__tab {
+  @include interactive();
+}
+
+.content__header {
+  margin: 0;
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $blue;
+
+  @media #{$tablet} {
+    margin: 22px 0 13px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue-back;
+  }
+}
+
+.content__descr {
+  margin: 6px 10px 9px 0;
+  font-weight: 300;
+  color: #373737;
+
+  @media #{$tablet} {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #343434;
+  }
+}
+
+.content__date {
+  font-size: 12px;
+  line-height: 16px;
+  color: #bfbfbf;
+
+  @media #{$tablet} {
+    font-size: 14px;
+    color: #c0c0c0;
+  }
+}
+
+.content__add {
+  display: none;
+  margin: 23px auto 17px;
+  width: 264px;
+
+  @include main-btn();
+}

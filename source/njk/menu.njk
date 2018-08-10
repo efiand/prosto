@@ -1,0 +1,71 @@
+<h2 class="visually-hidden">
+  Главное меню
+</h2>
+
+<div class="menu__board">
+  <ul class="menu__categories">
+    <li class="menu__category">
+      <a class="menu__category-link" href="#">
+        Для дома
+      </a>
+    </li>
+    <li class="menu__category">
+      <a class="menu__category-link menu__category-link--active">
+        Для бизнеса
+      </a>
+    </li>
+  </ul>
+  <button class="menu__closer hidden" type="button">
+    <span class="visually-hidden">
+      Закрыть меню
+    </span>
+  </button>
+  <nav class="menu__nav nav">
+    {% include "njk/nav.njk" %}
+  </nav>
+  <ul class="menu__services">
+    <li class="menu__services-item">
+      <button class="menu__btn login-popup-opener" type="button">
+        <span class="menu__btn-content menu__btn-content--user">
+            Регистрация и авторизация
+        </span>
+      </button>
+      <span class="menu__label">
+        Личный кабинет
+      </span>
+    </li>
+    <li class="menu__services-item">
+      <button class="menu__btn feedback-popup-opener" type="button">
+        <span class="menu__btn-content menu__btn-content--telephone">
+          Обатная связь
+        </span>
+      </button>
+      <span class="menu__label">
+        Обратный звонок
+      </span>
+    </li>
+    <li class="menu__services-item">
+      <a class="menu__btn" href="#">
+        <span class="menu__btn-content menu__btn-content--search">
+          Поиск
+        </span>
+      </a>
+      <span class="menu__label">
+        Поиск
+      </span>
+    </li>
+  </ul>
+  <p class="menu__contacts">
+    <b class="menu__city">
+      Санкт-Петербург
+    </b>
+    <a class="menu__city-toggler" href="#">
+      <span class="visually-hidden">
+        Выбрать другой город
+      </span>
+    </a>
+    <a class="menu__tel" href="tel:+78123664040">
+      +7 (812) 366 40 40
+    </a>
+  </p>
+</div>

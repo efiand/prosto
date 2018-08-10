@@ -1,0 +1,11 @@
+.login__pin {
+  &--active {
+    color: #ffffff;
+    background-color: $blue;
+    border-color: $blue;
+  }
+}
+
+.login__tab {
+  @include interactive();
+}
