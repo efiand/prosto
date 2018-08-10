@@ -2250,6 +2250,11 @@ input[type="file"].visually-hidden {
   box-shadow: 0 0 10px 0 rgba(85, 119, 231, 0.31);
 }
 
+.post__opt-list--overflowed {
+  height: 112px;
+  overflow-y: auto;
+}
+
 .post__opt-item {
   padding: 17px;
 
